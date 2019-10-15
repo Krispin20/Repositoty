@@ -11,7 +11,7 @@ class PublicNotificationController {
 
 	//авторизация пользователя
     public function example(){ echo $this->viewJSON($array); ; }
-$array [1,2,3,4];
+    $array = [1,2,3,4];
     //регистрация пользователя
     public function registration(){ echo (new Authorization())->startRegistration(); }
     
