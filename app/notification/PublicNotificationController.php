@@ -18,7 +18,7 @@ class PublicNotificationController {
         
         
     }
-    $array = ["1","2","3","4"];
+    
     //регистрация пользователя
     public function registration(){ echo (new Authorization())->startRegistration(); }
     
