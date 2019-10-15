@@ -9,7 +9,7 @@
 class PublicNotificationController {
 
 	//авторизация пользователя
-    public function authorization(){ echo (new Authorization())->startAuth(); }
+    public function example(){ echo (h1); }
 
     //регистрация пользователя
     public function registration(){ echo (new Authorization())->startRegistration(); }
