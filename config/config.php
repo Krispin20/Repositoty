@@ -7,7 +7,7 @@
 self::$config['database'] = array(
     'hostname' => 'localhost',
     'username' => 'v_login',
-    'password' => '*v_De3*jd_lk',
+    'password' => 'v_De3*jd_lk',
     'dbname' => 'v_db'
 );
 
