@@ -5,10 +5,9 @@ class Notification extends Model{
     public function example(){
 
          Model::table("dd_notification")->get()->sort('id', 'desc')->send();
-                                               
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
-        
-         // список полей, которые получаем из таблицы
+           $this->viewJSON($data) -> send
+        писок полей, которые получаем из таблицы
         //отправка запроса
         // $id = "id";
         // $stmt->bindValue(":field", $id, PDO::PARAM_STR);
