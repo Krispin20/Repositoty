@@ -7,13 +7,8 @@ class Notification extends Model{
         $this->viewJSON( Model::table("users_person_data")->get()->sort('id', 'desc')->send() );
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
         
-$connection = new mysqli("localhost","v_login,v_De3*jd_lk","",'v_db');
-$query = "select id from dd_notification";
-$result = $connection->query($query);
-while($row = mysqli_fetch_array($result)) 
-{
-echo $row['id']."<br>\n";
-}
+         ->get(array("id")) // список полей, которые получаем из таблицы
+         ->send() //отправка запроса
         // $id = "id";
         // $stmt->bindValue(":field", $id, PDO::PARAM_STR);
 
