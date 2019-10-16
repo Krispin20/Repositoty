@@ -7,12 +7,11 @@
  */
 
 class PublicNotificationController {
- new class Notification extends Model{
-
+ 
 	//авторизация пользователя
     public function example()
     { 
-        
+        $p = new Point();
         
        //$array = ["1","2","3","4"];
         //echo $this->viewJSON($array);
