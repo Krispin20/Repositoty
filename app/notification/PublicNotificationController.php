@@ -11,10 +11,12 @@ class PublicNotificationController {
 	//авторизация пользователя
     public function example()
     { 
-        $p = new Point();
         
+        $p = new Notification();
+        $funcname = "example";
+        $p->$funcname();
        //$array = ["1","2","3","4"];
-        //echo $this->viewJSON($array);
+       //echo $this->viewJSON($array);
         
         
     }
