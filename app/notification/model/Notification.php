@@ -6,9 +6,9 @@ class Notification extends Model{
 
          Model::table("dd_notification")->get()->sort('id', 'desc')->send();
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
-           $msv = array('x1' => 10, 'x2' => 20, 'x3' => 30); 
+         
            
-           $this->viewJSON($msv);
+           $this->viewJSON(table "dd_notification");
         
         
         //писок полей, которые получаем из таблицы
