@@ -9,7 +9,7 @@ class Notification extends Model{
            $arr = [1,2,3,4]{
            
          
-           json_encode (array($arr));
+           json_encode (array($arr))
         
         }
         
