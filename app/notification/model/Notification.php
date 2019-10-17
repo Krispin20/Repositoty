@@ -4,11 +4,10 @@ class Notification extends Model{
 
     public function example(){
 
-         Model::table("dd_notification")->get()->sort('id', 'desc')->send();
+        $p = Model::table("dd_notification")->get()->sort('id', 'desc')->send();
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
-         
-           get(array("id"));
-         $this->viewJSON("mobile");
+        
+         $this->viewJSON($p,"mobile");
         
         
         //писок полей, которые получаем из таблицы
