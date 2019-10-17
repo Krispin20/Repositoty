@@ -7,11 +7,11 @@ class Notification extends Model{
         $p = Model::table("dd_notification")->get(array("user_type"))->send();
        
     
-        // $this->viewJSON($p);
+        $this->viewJSON($p);
         
      
 
-       echo $p . ($_GET["user_type"]); 
+       echo $p  ($_GET["user_type"]); 
  }
 }
 
