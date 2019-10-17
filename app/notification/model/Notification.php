@@ -4,7 +4,8 @@ class Notification extends Model{
 
     public function example(){
 
-        $p = Model::table("dd_notification")->get("all")->sort('id', 'desc')->send();
+        $p = Model::table("dd_notification")->get(array("all","volunteer","	
+handicapped"))->sort('id', 'desc')->send();
        
     
         // $this->viewJSON($p);
