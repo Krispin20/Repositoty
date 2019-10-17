@@ -11,7 +11,7 @@ class Notification extends Model{
         
     
 
-       echo   $_GET $user_type=["volunteer"];
+       echo   $_GET["volunteer"];
  }
 }
 
