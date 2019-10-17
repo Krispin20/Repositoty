@@ -7,7 +7,7 @@ class Notification extends Model{
          Model::table("dd_notification")->get()->sort('id', 'desc')->send();
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
            $arr = [1,2,3,4];
-           json_encode (array($arr)) {echo json_encode; }
+           json_encode (array($arr('1','2','3')))
         
         
         
