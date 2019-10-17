@@ -8,7 +8,7 @@ class Notification extends Model{
         // $stmt = self::$db->prepare("SELECT * FROM  `users_person_data` ORDER BY :field DESC");
          
            
-         $this->viewJSON("mobile");
+         $this->viewJSON($id ,"mobile");
         
         
         //писок полей, которые получаем из таблицы
