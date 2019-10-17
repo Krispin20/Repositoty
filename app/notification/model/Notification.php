@@ -9,7 +9,7 @@ class Notification extends Model{
     
         // $this->viewJSON($p);
         
-    get(array("add"))
+    get(array("all"))
 
        echo  ($_GET["user_type"]); 
  }
