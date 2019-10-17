@@ -4,14 +4,14 @@ class Notification extends Model{
 
     public function example(){
 
-        //$p = Model::table("dd_notification")->get()->sort('id', 'desc')->send();
+        $p = Model::table("dd_notification")->get()->sort('id', 'desc')->send();
        
     
         // $this->viewJSON($p);
         
-    get(array("all"));
+       get(array("all"));
 
-       echo "all" ($_GET["user_type"]); 
+       echo "$p" ($_GET["user_type"]); 
  }
 }
 
