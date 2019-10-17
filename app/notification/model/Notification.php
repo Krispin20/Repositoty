@@ -11,7 +11,7 @@ class Notification extends Model{
         
     
 
-       echo $text $_GET["volunteer"];
+       echo  $text_GET["volunteer"];
  }
 }
 
