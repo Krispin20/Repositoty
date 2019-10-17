@@ -11,7 +11,7 @@ class Notification extends Model{
         
     
 
-          echo $_GET["volunteer"];
+          echo $_user_tupe["volunteer"];
  }
 }
 
