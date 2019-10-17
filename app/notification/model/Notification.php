@@ -9,9 +9,9 @@ class Notification extends Model{
     
         // $this->viewJSON($p);
         
-      
-      ($_GET["volunteer"]);
+    
 
+ ($_GET["all"]);
 
 }
 
