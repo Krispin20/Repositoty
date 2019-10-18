@@ -4,7 +4,7 @@ class Notification extends Model{
 
     public function example(){
 
-        $p = Model::table("dd_notification")->get(array("user_type","id","send_time","date"))->filter(array("user_type" => ('all')))->send();
+        $p = Model::table("dd_notification")->get(array("user_type","id","send_time","date"))->filter(array("user_type" => ('all','volunteer','handicapped')))->send();
        
     
         $this->viewJSON($p);
@@ -17,3 +17,4 @@ class Notification extends Model{
 
 
 
+//volunteer , all , handicapped
