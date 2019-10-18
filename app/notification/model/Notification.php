@@ -8,10 +8,10 @@ class Notification extends Model{
        
     
         $this->viewJSON($p);
-        self::$p['handicapped']
+        self::$p['handicapped"'
      
 
-       echo $p  ($_GET["user_type"]); 
+       echo   ($_GET["user_type"]); 
  }
 }
 
