@@ -8,7 +8,6 @@ class Notification extends Model{
         
         if (empty($_GET["user_type"])){
         echo "Неправильный запрос, вы не ввели значение";
-        
         }
        
     
