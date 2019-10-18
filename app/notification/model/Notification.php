@@ -8,7 +8,7 @@ class Notification extends Model{
        
     
         $this->viewJSON($p);
-        self::$p ['volunteer'];
+      
      
 
        echo   ($_GET["user_type"]); 
