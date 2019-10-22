@@ -10,7 +10,7 @@ class Notification extends Model{
         echo "Неправильный запрос, вы не ввели значение";
         }
        $g = 666
-         Model::table("dd_notification")->edit(array("user_type" =>$g ), array("id" => 1))->send();
+        $o = Model::table("dd_notification")->edit(array("user_type" =>$g ), array("id" => 1))->send();
     
         $this->viewJSON($p);
        
