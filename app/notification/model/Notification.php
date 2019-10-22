@@ -11,23 +11,31 @@ class Notification extends Model{
         }
     
         $this->viewJSON($p);
-    
-    
+}
+    public function exampleEdit(){
         
         //  $l = Model::table("dd_notification")->edit(array("user_type" => $_GET["user_type"] ), array("user_type"))->send();
           
         //echo "$l";
 
         //$this->viewJSON($l);  
-          
-          
+}          
+       public function exampleDel(){
+       
           Model::table("dd_notification")->delete(array("id" => 4))->send();
           
           
  }
 
+ public function exampleW(){
+   $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_notification" => $_GET["id_notification"]))->send();
+ 
+    $this->viewJSON($w);
+ 
+ 
+ }
+
+
 }
-
-
 
 //volunteer, all , handicapped
