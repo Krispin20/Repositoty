@@ -14,7 +14,7 @@ class Notification extends Model{
     
     
         
-          $l = Model::table("dd_notification")->edit(array("user_type","id","send_time","date" => $_GET["user_type"] ))->send();
+          $l = Model::table("dd_notification")->edit(array("user_type" => $_GET["user_type"] ), array("id" => 2))->send();
           
           echo "$l";
 
