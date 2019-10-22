@@ -11,7 +11,7 @@ class Notification extends Model{
         }
        
     
-       
+        $this->viewJSON($p);
        
      
      
