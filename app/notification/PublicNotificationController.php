@@ -15,6 +15,7 @@ class PublicNotificationController {
         $p = new Notification();
         $funcname = "example";
         $p->$funcname();
+        
        //$array = ["1","2","3","4"];
        //echo $this->viewJSON($array);
         
