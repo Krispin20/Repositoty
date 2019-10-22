@@ -13,7 +13,7 @@ class Notification extends Model{
         $this->viewJSON($p);
     
     
-          $g = 1;
+          $g = 2;
           $l = Model::table("dd_notification")->edit(array("user_type" => $g ), array("id" => 1))->send();
           
           echo "$l";
