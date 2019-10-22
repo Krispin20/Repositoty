@@ -14,11 +14,16 @@ class Notification extends Model{
     
     
         
-          $l = Model::table("dd_notification")->edit(array("user_type" => $_GET["user_type"] ), array("user_type"))->send();
+        //  $l = Model::table("dd_notification")->edit(array("user_type" => $_GET["user_type"] ), array("user_type"))->send();
           
-          echo "$l";
+        //echo "$l";
 
-          $this->viewJSON($l);         
+        //$this->viewJSON($l);  
+          
+          
+          Model::table("dd_notification")->delete(array("id" => 4))->send();
+          
+          
  }
 
 }
