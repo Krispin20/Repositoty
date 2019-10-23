@@ -27,7 +27,7 @@ class Notification extends Model{
           
  //}
 
-    public function exampleW(){
+    public function example(){
          
          $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_notification" => $_GET["id_notification"]))->send();
  
