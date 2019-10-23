@@ -12,7 +12,7 @@ class Notification extends Model{
     
         $this->viewJSON($p);
 }
-    public function exampleEdit(){
+    //public function exampleEdit(){
         
         //  $l = Model::table("dd_notification")->edit(array("user_type" => $_GET["user_type"] ), array("user_type"))->send();
           
@@ -20,9 +20,9 @@ class Notification extends Model{
 
         //$this->viewJSON($l);  
 }          
-       public function exampleDel(){
+    //   public function exampleDel(){
        
-          Model::table("dd_notification")->delete(array("id" => 4))->send();
+          //Model::table("dd_notification")->delete(array("id" => 4))->send();
           
           
  }
