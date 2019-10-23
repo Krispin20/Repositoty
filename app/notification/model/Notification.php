@@ -34,7 +34,7 @@ class Notification extends Model{
      if(empty($_GET["id_user"])){
         echo "Неправильный запрос";
         }
-    
+     $this->viewJSON($l);  
  
  
   } 
