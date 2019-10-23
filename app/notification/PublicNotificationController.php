@@ -16,6 +16,23 @@ class PublicNotificationController {
         $funcname = "example";
         $p->$funcname();
         
+        
+        
+       //$array = ["1","2","3","4"];
+       //echo $this->viewJSON($array);
+        
+        
+    }
+    
+     public function exampleW()
+    { 
+        
+        $p = new Notification();
+        $funcname = "exampleW";
+        $p->$funcname();
+        
+        
+        
        //$array = ["1","2","3","4"];
        //echo $this->viewJSON($array);
         
