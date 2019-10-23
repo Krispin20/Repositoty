@@ -31,6 +31,9 @@ class Notification extends Model{
          
          $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_user" => $_GET["id_notification"]))->send();
  
+     if(empty($_GET["id_user"])){
+        echo "Неправильный запрос";
+        }
     $this->viewJSON($w);
  
  
