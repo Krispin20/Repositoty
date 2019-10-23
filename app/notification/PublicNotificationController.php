@@ -13,7 +13,7 @@ class PublicNotificationController {
     { 
         
         $p = new Notification();
-        $funcname = "example";
+        $funcname = "getAll";
         $p->$funcname();
         
         
