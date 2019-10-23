@@ -29,7 +29,7 @@ class Notification extends Model{
 
     public function exampleW(){
          
-         $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_notification" => $_GET["id_notification"]))->send();
+         $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_user" => $_GET["id_notification"]))->send();
  
     $this->viewJSON($w);
  
