@@ -9,7 +9,7 @@
 class PublicNotificationController {
  
 	//авторизация пользователя
-    public function example()
+    public function getAll()
     { 
         
         $p = new Notification();
