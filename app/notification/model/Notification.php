@@ -29,7 +29,7 @@ class Notification extends Model{
 
     public function exampleW(){
          
-         $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_user" => $_GET["id_user"]))->send(){
+         $w = Model::table("dd_notification_opened")->get(array("id_notification","id_user","open_time"))->filter(array("id_user" => $_GET["id_user"]))->send();{
  
      if(empty($_GET["id_user"])){
         echo "Неправильный запрос";
