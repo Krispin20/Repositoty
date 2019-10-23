@@ -10,7 +10,7 @@ class Notification extends Model{
         echo "Неправильный запрос, вы не ввели значение";
         }
     
-       
+        $this->viewJSON($p);
 }
     public function exampleEdit(){
         
@@ -18,7 +18,7 @@ class Notification extends Model{
           
         echo "$l";
 
-       
+        $this->viewJSON($l);  
 }          
      public function exampleDel(){
        
