@@ -9,7 +9,9 @@ class Notification extends Model{
      $this->viewJSON($p);  
      
          if(empty($_GET["user_type"])){
-        echo "Неправильный запрос, вы не ввели значение";
+            echo "Неправильный запрос, вы не ввели значение";
+        }else{
+            $this->viewJSON($p); 
         }
     
        
